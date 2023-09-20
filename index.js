@@ -19,6 +19,7 @@ function loginWithFacebook() {
         if (response.authResponse) {
             // The user is logged in
             console.log('user logged in')
+            loginCallback(response)
         } else {
             // The user is not logged in
             console.log('use not logged in')
